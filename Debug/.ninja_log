@@ -1,0 +1,41 @@
+# ninja log v5
+1	105	6585348152942193	I:/new shit/Debug/Obj/main.o	e1699ec1176c36e4
+110	159	6585348153410730	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+1	117	6585327641446396	I:/new shit/Debug/Obj/DIO.o	35de97aefbdd5600
+1	171	6585349154154799	I:/new shit/Debug/Obj/main.o	e1699ec1176c36e4
+176	222	6585349154779116	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+1	127	6585349773644112	I:/new shit/Debug/Obj/main.o	e1699ec1176c36e4
+130	179	6585349774112637	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+2	130	6585350472895660	I:/new shit/Debug/Obj/main.o	e1699ec1176c36e4
+136	185	6585350473364470	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+2	145	6585351002269862	I:/new shit/Debug/Obj/main.o	e1699ec1176c36e4
+149	198	6585351002738392	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+2	296	6585353023297990	I:/new shit/Debug/Obj/main.o	e1699ec1176c36e4
+300	354	6585353023910503	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+12	118	6585354251450724	I:/new shit/Debug/Obj/main.o	e1699ec1176c36e4
+2	121	6585354251450724	I:/new shit/Debug/Obj/DIO.o	35de97aefbdd5600
+126	173	6585354252075854	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+14	117	6585355030723103	I:/new shit/Debug/Obj/main.o	cefd288c99687852
+1	131	6585355030879291	I:/new shit/Debug/Obj/DIO.o	5845a729aa2b1925
+136	183	6585355031504402	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+0	159	6585356238464624	I:/new shit/Debug/Obj/main.o	cefd288c99687852
+163	211	6585356238933174	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+10	202	6585361515986811	I:/new shit/Debug/Obj/main.o	cefd288c99687852
+1	127	6585361899077144	I:/new shit/Debug/Obj/DIO.o	5845a729aa2b1925
+132	180	6585361899545712	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+1	106	6585365151319793	I:/new shit/Debug/Obj/main.o	cefd288c99687852
+109	162	6585365151944295	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+1	114	6585365815525154	I:/new shit/Debug/Obj/main.o	cefd288c99687852
+117	170	6585365816149993	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+1	139	6585366829215801	I:/new shit/Debug/Obj/DIO.o	5845a729aa2b1925
+12	154	6585366829371817	I:/new shit/Debug/Obj/main.o	cefd288c99687852
+160	229	6585366830309553	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+2	109	6585369036314191	I:/new shit/Debug/Obj/main.o	cefd288c99687852
+112	167	6585369036938945	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+1	123	6585369979594167	I:/new shit/Debug/Obj/main.o	cefd288c99687852
+128	183	6585369980218956	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+2	111	6585370309205086	I:/new shit/Debug/Obj/main.o	cefd288c99687852
+115	167	6585370309673489	I:/new shit/Debug/Exe/newshit.out	96ed5c3b8e9e39f0
+0	184	6585387049305520	I:/ODD_Even_checker_using_LED_TIVAC/Debug/Obj/main.o	a55645f211680bae
+1	115	6585387180965922	I:/ODD_Even_checker_using_LED_TIVAC/Debug/Obj/DIO.o	dbf79b1dac8ad3b9
+120	197	6585387181902803	I:/ODD_Even_checker_using_LED_TIVAC/Debug/Exe/ODD_EVEN.out	cf0e76fda0f8ccc8

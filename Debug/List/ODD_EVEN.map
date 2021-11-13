@@ -1,0 +1,227 @@
+###############################################################################
+#
+# IAR ELF Linker V9.10.2.313/W64 for ARM                  13/Nov/2021  22:31:58
+# Copyright 2007-2021 IAR Systems AB.
+#
+#    Output file  =  I:\ODD_Even_checker_using_LED_TIVAC\Debug\Exe\ODD_EVEN.out
+#    Map file     =
+#        I:\ODD_Even_checker_using_LED_TIVAC\Debug\List\ODD_EVEN.map
+#    Command line =
+#        -f I:\ODD_Even_checker_using_LED_TIVAC\Debug\Exe\ODD_EVEN.out.rsp
+#        (I:\ODD_Even_checker_using_LED_TIVAC\Debug\Obj\DIO.o
+#        I:\ODD_Even_checker_using_LED_TIVAC\Debug\Obj\main.o
+#        --no_out_extension -o
+#        I:\ODD_Even_checker_using_LED_TIVAC\Debug\Exe\ODD_EVEN.out --redirect
+#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
+#        I:\ODD_Even_checker_using_LED_TIVAC\Debug\List\ODD_EVEN.map --config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.0\arm\CONFIG\generic_cortex.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x7'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block PROC_STACK with size = 0, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address   Size  Object
+  -------            ----         -------   ----  ------
+"A0":                                       0x40
+  .intvec            ro code          0x0   0x40  vector_table_M.o [3]
+                                   - 0x40   0x40
+
+"P1":                                      0x680
+  .text              ro code         0x40  0x390  DIO.o [1]
+  .text              ro code        0x3d0  0x110  main.o [1]
+  .text              ro code        0x4e0   0x9c  rand.o [2]
+  .text              ro code        0x57c   0x38  zero_init3.o [3]
+  Initializer bytes  const          0x5b4   0x30  <for P2-1>
+  .text              ro code        0x5e4   0x2a  copy_init3.o [3]
+  .text              ro code        0x60e    0x2  vectortrap_M.o [3]
+  .text              ro code        0x610   0x28  data_init.o [3]
+  .iar.init_table    const          0x638   0x24  - Linker created -
+  .text              ro code        0x65c   0x1e  cmain.o [3]
+  .text              ro code        0x67a    0x4  low_level_init.o [2]
+  .text              ro code        0x67e    0x4  exit.o [2]
+  .text              ro code        0x684    0xa  cexit.o [3]
+  .text              ro code        0x690   0x14  exit.o [4]
+  .text              ro code        0x6a4   0x1c  cstartup_M.o [3]
+  .rodata            const          0x6c0    0x0  zero_init3.o [3]
+  .rodata            const          0x6c0    0x0  copy_init3.o [3]
+                                  - 0x6c0  0x680
+
+"P2", part 1 of 3:                          0x30
+  P2-1                        0x2000'0000   0x30  <Init block>
+    .data            inited   0x2000'0000   0x28  main.o [1]
+    .data            inited   0x2000'0028    0x8  rand.o [2]
+                            - 0x2000'0030   0x30
+
+"P2", part 2 of 3:                          0x84
+  .bss               zero     0x2000'0030   0x84  rand.o [2]
+                            - 0x2000'00b4   0x84
+
+"P2", part 3 of 3:                         0x400
+  CSTACK                      0x2000'00b8  0x400  <Block>
+    CSTACK           uninit   0x2000'00b8  0x400  <Block tail>
+                            - 0x2000'04b8  0x400
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+        0x6c0     0x7'ffff  0x7'f940
+  0x2000'00b4  0x2000'00b7       0x4
+  0x2000'04b8  0x2000'ffff    0xfb48
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x84:
+          0x2000'0030  0x84
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x30:
+                0x5b4  0x30
+    1 destination range, total size 0x30:
+          0x2000'0000  0x30
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+command line/config:
+    -------------------------------------------
+    Total:
+
+I:\ODD_Even_checker_using_LED_TIVAC\Debug\Obj: [1]
+    DIO.o                 912
+    main.o                272       40       40
+    -------------------------------------------
+    Total:              1'184       40       40
+
+dl7M_tln.a: [2]
+    exit.o                  4
+    low_level_init.o        4
+    rand.o                156        8      140
+    -------------------------------------------
+    Total:                164        8      140
+
+rt7M_tl.a: [3]
+    cexit.o                10
+    cmain.o                30
+    copy_init3.o           42
+    cstartup_M.o           28
+    data_init.o            40
+    vector_table_M.o       64
+    vectortrap_M.o          2
+    zero_init3.o           56
+    -------------------------------------------
+    Total:                272
+
+shb_l.a: [4]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Gaps                    4
+    Linker created                  36    1'024
+-----------------------------------------------
+    Grand Total:        1'644       84    1'204
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base         0x638          --   Gb  - Linker created -
+.iar.init_table$$Limit        0x65c          --   Gb  - Linker created -
+?main                         0x65d         Code  Gb  cmain.o [3]
+BusFault_Handler              0x60f         Code  Wk  vectortrap_M.o [3]
+CSTACK$$Base            0x2000'00b8          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'04b8          --   Gb  - Linker created -
+DIO_DEN_PORT                   0xf3   0x76  Code  Gb  DIO.o [1]
+DIO_Direction_PORT             0x6f   0x84  Code  Gb  DIO.o [1]
+DIO_PullUP_pin                0x1df   0x82  Code  Gb  DIO.o [1]
+DIO_Write_pin                 0x169   0x76  Code  Gb  DIO.o [1]
+DIO_clear_pin                 0x2d9   0x8e  Code  Gb  DIO.o [1]
+DIO_init_clk                   0x41   0x2e  Code  Gb  DIO.o [1]
+DIO_read_pin                  0x261   0x78  Code  Gb  DIO.o [1]
+DebugMon_Handler              0x60f         Code  Wk  vectortrap_M.o [3]
+HardFault_Handler             0x60f         Code  Wk  vectortrap_M.o [3]
+MemManage_Handler             0x60f         Code  Wk  vectortrap_M.o [3]
+NMI_Handler                   0x60f         Code  Wk  vectortrap_M.o [3]
+PendSV_Handler                0x60f         Code  Wk  vectortrap_M.o [3]
+Region$$Table$$Base           0x638          --   Gb  - Linker created -
+Region$$Table$$Limit          0x65c          --   Gb  - Linker created -
+SVC_Handler                   0x60f         Code  Wk  vectortrap_M.o [3]
+SysTick_Handler               0x60f         Code  Wk  vectortrap_M.o [3]
+UsageFault_Handler            0x60f         Code  Wk  vectortrap_M.o [3]
+_Rand_idx               0x2000'00b0    0x4  Data  Lc  rand.o [2]
+_Rand_rv                0x2000'0030   0x80  Data  Lc  rand.o [2]
+_Randinit               0x2000'0028    0x1  Data  Gb  rand.o [2]
+_Randseed               0x2000'002c    0x4  Data  Gb  rand.o [2]
+__cmain                       0x65d         Code  Gb  cmain.o [3]
+__exit                        0x691   0x14  Code  Gb  exit.o [4]
+__iar_copy_init3              0x5e5   0x2a  Code  Gb  copy_init3.o [3]
+__iar_data_init3              0x611   0x28  Code  Gb  data_init.o [3]
+__iar_program_start           0x6a5         Code  Gb  cstartup_M.o [3]
+__iar_zero_init3              0x57d   0x38  Code  Gb  zero_init3.o [3]
+__low_level_init              0x67b    0x4  Code  Gb  low_level_init.o [2]
+__vector_table                  0x0         Data  Gb  vector_table_M.o [3]
+_call_main                    0x669         Code  Gb  cmain.o [3]
+_exit                         0x685         Code  Gb  cexit.o [3]
+exit                          0x67f    0x4  Code  Gb  exit.o [2]
+main                          0x3d1  0x110  Code  Gb  main.o [1]
+rand                          0x4e1   0x8a  Code  Gb  rand.o [2]
+x                       0x2000'0000   0x28  Data  Gb  main.o [1]
+
+
+[1] = I:\ODD_Even_checker_using_LED_TIVAC\Debug\Obj
+[2] = dl7M_tln.a
+[3] = rt7M_tl.a
+[4] = shb_l.a
+
+  1'644 bytes of readonly  code memory
+     84 bytes of readonly  data memory
+  1'204 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,18 @@
+# ninja log v5
+14	113	6585355060000000	I:/new shit/Debug/BrowseInfo/main.xcl	af4af639138e3e71
+8	100	6585384204273979	I:/new shit/Debug/BrowseInfo/main.pbi	d84945ad5fe87744
+103	158	6585384204898755	I:/new shit/Debug/BrowseInfo/newshit.pbd	7a4a8f225e5eaa10
+160	999	6585384213020990	I:/new shit/Debug/BrowseInfo/newshit.pbw	80f52293ed3e8fd5
+1	83	6585384204117773	I:/new shit/Debug/BrowseInfo/DIO.pbi	37ab2cc4043e35d0
+0	179	6585355060000000	I:/new shit/Debug/BrowseInfo/DIO.xcl	66a75028668241b2
+0	82	6585386690000000	I:/ODD_Even_checker_using_LED_TIVAC/Debug/BrowseInfo/main.xcl	829d2e6832e4d9a1
+87	122	6585386697214510	I:/ODD_Even_checker_using_LED_TIVAC/Debug/BrowseInfo/main.pbi	e245272eda481f86
+127	139	6585386697371055	I:/ODD_Even_checker_using_LED_TIVAC/Debug/BrowseInfo/ODD_EVEN.pbd	7481d5c445a320bd
+142	555	6585386701276273	I:/ODD_Even_checker_using_LED_TIVAC/Debug/BrowseInfo/ODD_EVEN.pbw	cb83f48eb0b0db55
+0	83	6585387055532413	I:/ODD_Even_checker_using_LED_TIVAC/Debug/BrowseInfo/main.pbi	e245272eda481f86
+86	123	6585387055844776	I:/ODD_Even_checker_using_LED_TIVAC/Debug/BrowseInfo/ODD_EVEN.pbd	7481d5c445a320bd
+126	950	6585387063967077	I:/ODD_Even_checker_using_LED_TIVAC/Debug/BrowseInfo/ODD_EVEN.pbw	cb83f48eb0b0db55
+1	76	6585387180000000	I:/ODD_Even_checker_using_LED_TIVAC/Debug/BrowseInfo/DIO.xcl	a18bb06b147805ea
+82	156	6585387185807946	I:/ODD_Even_checker_using_LED_TIVAC/Debug/BrowseInfo/DIO.pbi	82d9461fe49cc400
+160	213	6585387186432850	I:/ODD_Even_checker_using_LED_TIVAC/Debug/BrowseInfo/ODD_EVEN.pbd	6612de7096a831d9
+217	1048	6585387194555833	I:/ODD_Even_checker_using_LED_TIVAC/Debug/BrowseInfo/ODD_EVEN.pbw	cb83f48eb0b0db55
